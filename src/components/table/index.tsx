@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { TableContainer } from "./styles";
-import { useTable, Column, Row } from "react-table";
+import { useTable, Column } from "react-table";
 
 interface TableProps {
   columns: Column[];

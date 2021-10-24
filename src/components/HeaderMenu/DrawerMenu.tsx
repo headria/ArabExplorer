@@ -40,8 +40,8 @@ const CollapseMenu = ({ title, menus = [] }) => {
       </button>
       <div className="collapse" id="collapse-1">
         <ul className="sub-menu-list">
-          {menus?.map((item) => (
-            <NavLink title={item} className="menu-item" />
+          {menus?.map((item, id) => (
+            <NavLink key={id} title={item} className="menu-item" />
           ))}
         </ul>
       </div>
